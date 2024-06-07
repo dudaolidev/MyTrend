@@ -3,6 +3,11 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'reac
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Cadastro({ navigation }) {
+
+
+
+  
+
   const [nome, setNome] = useState('');
   const [sobrenome, setSobrenome] = useState('');
   const [celular, setCelular] = useState('');

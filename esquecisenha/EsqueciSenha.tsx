@@ -1,36 +1,48 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 export default function EsqueciSenha({ navigation }) {
-  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handleEsqueciSenhaPress = () => {
-    if (!email) {
-      Alert.alert('Erro', 'Por favor, insira seu email.');
-      return;
-    }
+  const handleEnviarPress = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      alert('Email enviado com sucesso!');
+    }, 2000); 
+  };
 
-    // Aqui você pode adicionar a lógica para o envio do email de recuperação de senha
-
-    Alert.alert('Sucesso', 'Instruções de recuperação de senha enviadas para seu email.');
-    navigation.navigate('Login');
+  const handleCadastrarPress = () => {
+    navigation.navigate('Cadastro');
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Recuperar Senha</Text>
+      <Text style={styles.titleText}>Trocar senha</Text>
+      <Text style={styles.instructionsText}>
+        Iremos te enviar um email com um link para resetar sua senha
+      </Text>
+      
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Digite seu email de acesso"
+          placeholder="Insira seu email de cadastro"
           placeholderTextColor="gray"
-          value={email}
-          onChangeText={setEmail}
         />
       </View>
-      <TouchableOpacity onPress={handleEsqueciSenhaPress} style={styles.recuperarButton}>
-        <Text style={styles.buttonText}>Enviar</Text>
+
+      <TouchableOpacity style={styles.sendButton} onPress={handleEnviarPress} disabled={loading}>
+        <Text style={styles.sendButtonText}>{loading ? 'Enviando...' : 'Enviar'}</Text>
       </TouchableOpacity>
+
+      <View style={styles.bottomTextContainer}>
+        <Text style={styles.noAccountText}>
+          Não tem uma conta? 
+          <TouchableOpacity onPress={handleCadastrarPress}>
+            <Text style={styles.cadastrarText}> Cadastrar</Text>
+          </TouchableOpacity>
+        </Text>
+      </View>
     </View>
   );
 }
@@ -42,15 +54,26 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 50,
   },
-  title: {
+
+  titleText: {
     fontWeight: 'bold',
     fontSize: 30,
     textAlign: 'center',
-    marginBottom: 25,
+    marginBottom: 50,
+    marginTop: 30,
   },
+
+  instructionsText: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 30,
+    paddingHorizontal: 10,
+  },
+
   inputContainer: {
-    marginBottom: 20,
+    marginBottom: 40,
   },
+
   input: {
     borderWidth: 1,
     borderColor: 'gray',
@@ -58,19 +81,37 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 12,
     fontSize: 16,
-    marginTop: 5,
+    marginTop: 25,
   },
-  recuperarButton: {
-    backgroundColor: '#0077be', 
+
+  sendButton: {
+    backgroundColor: '#005B96',
     paddingVertical: 15,
-    paddingHorizontal: 80,
-    borderRadius: 5,
+    paddingHorizontal: 90,
+    borderRadius: 10,
     alignSelf: 'center',
+    marginTop: 20,
   },
-  buttonText: {
+
+  sendButtonText: {
     color: 'white',
     fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center',
+  },
+
+  bottomTextContainer: {
+    marginTop: 100,
+    alignItems: 'center',
+  },
+
+  noAccountText: {
     fontSize: 16,
     textAlign: 'center',
+  },
+
+  cadastrarText: {
+    color: '#005B96',
+    fontWeight: 'bold',
   },
 });

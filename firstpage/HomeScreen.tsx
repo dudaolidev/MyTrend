@@ -13,12 +13,12 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../src/assents/tartaruga.png")}
+        source={require("../src/assents/estrela.png")}
         style={styles.logo}
       />
 
       <Text style={styles.title}> Ajude nossas prais {"\n"} e resgate seu <Text style={styles.oceanBlueText}>BeachCoin</Text> </Text>
-      <Text style={styles.subTitle}> Encontre a peça ideal para você </Text>
+      <Text style={styles.subTitle}> </Text>
 
       <TouchableOpacity style={styles.button} onPress={handleEntrarPress}>
         
@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 105,
     borderRadius: 5,
-    marginTop: 30,
   },
   buttonOutline: {
     borderColor: '#0077be', 

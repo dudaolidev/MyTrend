@@ -16,7 +16,7 @@ export default function LoginPage({ navigation }) {
       setTimeout(() => {
         if (userData && userData.email === email && userData.senha === senha) {
           setIsSending(false);
-          navigation.navigate('ConfirmaçãoLogin');
+          navigation.navigate('ConfirmacaoLogin'); 
         } else {
           setIsSending(false);
           Alert.alert('Erro', 'Email ou senha incorretos.');
@@ -55,24 +55,21 @@ export default function LoginPage({ navigation }) {
       </View>
 
       <View style={styles.checkboxContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('EsqueciSenha')}>
           <Text style={styles.esqueciSenhaText}>Esqueci minha senha</Text>
         </TouchableOpacity>
       </View>
 
       <TouchableOpacity onPress={handleLoginPress} style={styles.loginButton} disabled={isSending}>
-        <Text style={styles.buttonText}>{isSending ? 'Enviando...' : 'Entrar'}</Text>
+        <Text style={styles.buttonText}>{isSending ? 'Entrando...' : 'Entrar'}</Text>
       </TouchableOpacity>
 
       <Text style={styles.Ou}> Ou</Text>
 
       <View style={styles.googleContainer}>
         <TouchableOpacity style={styles.googleButton}>
-        <Image
-            source={require("../src/assents/google.png")}
-            style={styles.googleLogo}
-          />
-          <Text style={styles.googleButtonText}>Entre com sua conta Google</Text>
+          <Image source={require('../src/assents/google.png')} style={styles.googleIcon} />
+          <Text style={styles.googleButtonText}>Entrar com sua conta Google</Text>
         </TouchableOpacity>
       </View>
 
@@ -141,21 +138,21 @@ const styles = StyleSheet.create({
   googleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 20,
-  },
-  googleLogo: {
-    width: 30,
-    height: 20,
-    marginRight: 10,
   },
   googleButton: {
     backgroundColor: 'lightgray',
-    paddingVertical: 15,
-    paddingHorizontal: 20,
+    paddingVertical: 10 ,
+    paddingHorizontal: 100, 
     borderRadius: 5,
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  googleIcon: {
+    width: 20,
+    height: 20,
+    marginRight: 10,
   },
   googleButtonText: {
     fontSize: 16,
@@ -183,10 +180,10 @@ const styles = StyleSheet.create({
   },
   esqueciSenhaText: {
     fontSize: 16,
-    color: '#0077be',
+    color: '#0077be', 
     textDecorationLine: 'underline',
     textAlign: 'justify',
-    marginLeft: 185
+    
   },
   naoTemConta: {
     textAlign: 'center',
