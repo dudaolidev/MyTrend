@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   editProfileButtonText: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#0077be',
+    color: '#e60000', // Cor alterada para vermelho
   },
   profileImageContainer: {
     alignItems: 'center',
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 100,
     borderWidth: 2,
-    borderColor: '#0077be',
+    borderColor: '#e60000', // Cor alterada para vermelho
   },
   inputContainer: {
     width: '100%',
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   saveButton: {
-    backgroundColor: '#0077be',
+    backgroundColor: '#e60000', // Cor alterada para vermelho
     paddingVertical: 15,
     borderRadius: 5,
     marginBottom: 20,

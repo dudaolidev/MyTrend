@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   },
 
   sendButton: {
-    backgroundColor: '#005B96',
+    backgroundColor: '#e60000',
     paddingVertical: 15,
     paddingHorizontal: 90,
     borderRadius: 10,
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   },
 
   cadastrarText: {
-    color: '#005B96',
+    color: '#e60000',
     fontWeight: 'bold',
   },
 });

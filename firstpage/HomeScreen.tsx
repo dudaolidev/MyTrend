@@ -17,16 +17,17 @@ export default function HomeScreen({ navigation }) {
         style={styles.logo}
       />
 
-      <Text style={styles.title}> Ajude nossas prais {"\n"} e resgate seu <Text style={styles.oceanBlueText}>BeachCoin</Text> </Text>
-      <Text style={styles.subTitle}> </Text>
+      <Text style={styles.title}> A  melhor combinação para {"\n"} seu estilo com <Text style={styles.redText}>MyTrend</Text> </Text>
+      
+
+      <Text style={styles.findPieceText}>Encontre a peça ideal para você</Text>
 
       <TouchableOpacity style={styles.button} onPress={handleEntrarPress}>
-        
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.buttonOutline} onPress={handleCadastrarPress}>
-        <Text style={[styles.buttonText, styles.oceanBlueText]}>Cadastrar</Text>
+        <Text style={[styles.buttonText, styles.redText]}>Cadastrar</Text>
       </TouchableOpacity>
     </View>
   )
@@ -49,21 +50,27 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
-  oceanBlueText: {
-    color: '#0077be', 
+  redText: {
+    color: '#e60000', 
+  },
+  findPieceText: {
+    fontSize: 13,
+    marginVertical: 18, 
+    textAlign: 'center',
+    color: '#333',
   },
   subTitle: {
     marginTop: 20,
     fontSize: 14,
   },
   button: {
-    backgroundColor: '#0077be', 
+    backgroundColor: '#e60000', 
     paddingVertical: 15,
     paddingHorizontal: 105,
     borderRadius: 5,
   },
   buttonOutline: {
-    borderColor: '#0077be', 
+    borderColor: '#e60000', 
     borderWidth: 1,
     paddingVertical: 15,
     paddingHorizontal: 90,

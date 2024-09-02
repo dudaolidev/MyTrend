@@ -16,13 +16,13 @@ export default function PerfilMain() {
         </View>
         <View style={styles.infoContainer}>
           <View style={styles.infoBox}>
-            <Text style={styles.infoText}>107 BeachCoins</Text>
+            <Text style={styles.infoText}>? </Text>
           </View>
           <View style={styles.infoBox}>
-            <Text style={styles.infoText}>27 semanas de uso</Text>
+            <Text style={styles.infoText}>?</Text>
           </View>
           <View style={styles.infoBox}>
-            <Text style={styles.infoText}>46 recompensas resgatadas</Text>
+            <Text style={styles.infoText}>?</Text>
           </View>
         </View>
       </View>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: 150, 
-    backgroundColor: '#e0f7fa',
+    backgroundColor: '#be2929',
   },
   content: {
     width: '100%',
@@ -60,13 +60,13 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 75,
     borderWidth: 2,
-    borderColor: '#0077be',
+    borderColor: '#e60000',
     marginTop: 40,
   },
   nameText: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#0077be',
+    color: '#e60000',
     marginTop: 10,
   },
   birthdateText: {
@@ -80,11 +80,11 @@ const styles = StyleSheet.create({
   },
   infoBox: {
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: '#e60000',
     borderRadius: 25,
     padding: 22,
     marginBottom: 25,
-    backgroundColor: '#003366', 
+    backgroundColor: '#e60000', 
     justifyContent: 'center',
   },
   infoText: {

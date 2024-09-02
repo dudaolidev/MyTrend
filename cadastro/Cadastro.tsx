@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   checked: {
-    backgroundColor: '#0077be', 
+    backgroundColor: '#e60000', 
   },
   checkMark: {
     color: 'white',
@@ -187,11 +187,11 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   linkText: {
-    color: '#0077be', 
+    color: '#e60000', 
     textDecorationLine: 'underline',
   },
   cadastrarButton: {
-    backgroundColor: '#0077be', 
+    backgroundColor: '#e60000', 
     paddingVertical: 15,
     paddingHorizontal: 80,
     borderRadius: 5,

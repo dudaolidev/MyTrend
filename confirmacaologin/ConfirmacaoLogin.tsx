@@ -40,12 +40,12 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   linkText: {
-    color: '#0077be',
+    color: '#e60000',
     fontSize: 16,
   },
   line: {
     borderBottomWidth: 1,
-    borderBottomColor: '#0077be',
+    borderBottomColor: '#e60000',
     width: '51%',
     marginTop: 1,
     marginBottom: 20,

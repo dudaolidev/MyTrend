@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   loginButton: {
-    backgroundColor: '#0077be', 
+    backgroundColor: '#e60000',
     paddingVertical: 15,
     paddingHorizontal: 100,
     borderRadius: 5,
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
   },
   esqueciSenhaText: {
     fontSize: 16,
-    color: '#0077be', 
+    color: '#e60000', 
     textDecorationLine: 'underline',
     textAlign: 'justify',
     
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   cadastrar: {
     textAlign: 'justify',
     marginLeft: 3,
-    color: '#0077be',
+    color: '#e60000', 
     fontWeight: 'bold',
   },
 });

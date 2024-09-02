@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#0077be',
+    color: '#e60000',
   },
   setting: {
     flexDirection: 'row',
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   languageButton: {
     paddingVertical: 10,
     paddingHorizontal: 15,
-    backgroundColor: '#0077be',
+    backgroundColor: '#e60000',
     borderRadius: 5,
   },
   languageButtonText: {
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   editProfileButton: {
     paddingVertical: 10,
     paddingHorizontal: 15,
-    backgroundColor: '#0077be',
+    backgroundColor: '#e60000',
     borderRadius: 5,
   },
   editProfileButtonText: {
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     right: 20,
     paddingVertical: 15,
     paddingHorizontal: 20,
-    backgroundColor: '#0077be',
+    backgroundColor: '#e60000',
     borderRadius: 5,
     alignItems: 'center',
   },
