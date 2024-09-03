@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BeachCoins",
-    "slug": "BeachCoins",
+    "name": "MyTrend",
+    "slug": "MyTrend",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,7 +30,7 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "com.anonymous.BeachCoins"
+      "package": "com.anonymous.MyTrend"
     },
     "web": {
       "favicon": "./assets/favicon.png"

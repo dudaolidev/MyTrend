@@ -1,4 +1,4 @@
-package com.anonymous.BeachCoins
+package com.anonymous.MyTrend
 
 import android.os.Build
 import android.os.Bundle
