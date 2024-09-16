@@ -64,7 +64,7 @@ Antes de iniciar, certifique-se de ter instalado as seguintes ferramentas:
   npm install -g expo-cli
   ```
 
-  ### Passo a Passo
+### >  Passo a Passo
 
 #### Clone o repositório:
 
@@ -75,7 +75,7 @@ git clone https://github.com/seu-usuario/MyTrend.git
 cd MyTrend
  ``` 
 
-### Inicie a aplicação:
+#### Inicie a aplicação:
 
 
 Com tudo configurado, você pode iniciar a aplicação com o comando:
@@ -84,7 +84,7 @@ Com tudo configurado, você pode iniciar a aplicação com o comando:
 npx expo start
 ```
 
-### Abra o aplicativo no seu dispositivo ou emulador:
+#### Abra o aplicativo no seu dispositivo ou emulador:
 
 No terminal, aparecerá um QR code. Você pode escaneá-lo com o aplicativo Expo Go no seu celular (disponível na Play Store ou App Store).  
 Se estiver usando um emulador Android ou iOS, o Expo também abrirá automaticamente.
