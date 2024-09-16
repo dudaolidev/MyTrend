@@ -2,6 +2,8 @@
 ### Projeto Challenge FIAP 2024
 
 ## Sobre o MyTrend
+![image](https://github.com/user-attachments/assets/78281615-9c2c-4315-968a-2356ce4881ed)
+
 
 ## Integrantes:
 - Guilherme Rocha Toledo dos Santos - RM99396
