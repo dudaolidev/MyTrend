@@ -1,4 +1,4 @@
-# MyTRend Project
+# MyTrend Project
 ### Projeto Challenge FIAP 2024
 
 ## Sobre o MyTrend
@@ -14,7 +14,7 @@
 
 ## Arquitetura de pastas 
 
-/MyTrend-main  
+**/MyTrend-main**  
 │  
 ├── **/android**                  # Configurações e código específico para Android  
 │   ├── **/app**                  # Contém o código fonte da aplicação Android  
@@ -50,3 +50,41 @@
 └── **.gitignore**                # Arquivos e pastas ignorados pelo Git  
 
 ## Como rodar a aplicação
+Siga as instruções abaixo para configurar e rodar a aplicação localmente:
+
+### Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado as seguintes ferramentas:
+
+- **Node.js** (versão 14.x ou superior): [Instalar Node.js](https://nodejs.org)
+- **npm** (gerenciador de pacotes do Node.js) ou **Yarn**: O npm é instalado automaticamente com o Node.js.
+- **Android Studio** (se for rodar no emulador Android) ou dispositivo físico Android/iOS.
+- **Expo CLI** (para rodar a aplicação React Native):  
+  ```
+  npm install -g expo-cli
+  ```
+
+  ### Passo a Passo
+
+#### Clone o repositório:
+
+Primeiro, clone o repositório do projeto na sua máquina:
+
+```
+git clone https://github.com/seu-usuario/MyTrend.git
+cd MyTrend
+ ``` 
+
+### Inicie a aplicação:
+
+
+Com tudo configurado, você pode iniciar a aplicação com o comando:
+
+```
+npx expo start
+```
+
+### Abra o aplicativo no seu dispositivo ou emulador:
+
+No terminal, aparecerá um QR code. Você pode escaneá-lo com o aplicativo Expo Go no seu celular (disponível na Play Store ou App Store).  
+Se estiver usando um emulador Android ou iOS, o Expo também abrirá automaticamente.
